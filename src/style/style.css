@@ -1,0 +1,140 @@
+.filter{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 90%;
+    height: 10vh;
+}
+.filter__all--btn , .filter__done--btn , .filter__add--btn{
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: #1a1a1a;
+    color:white;
+    font-size: 20px;
+    font-family: sans-serif;
+    transition: 0.2s;
+}
+
+.filter__all--btn:hover , .filter__done--btn:hover , .filter__add--btn:hover{
+ background-color: grey;
+ color: #1a1a1a;
+}
+
+
+.todo__container{
+    width:  90vw;
+    height: 90vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: hidden;
+    overflow-y:auto;   gap: 10px;
+}
+.todo__item.done{
+    position: relative;
+    width: 200px;
+    background-color: #2dd874;
+    list-style: none;
+    height: 120px;
+}
+.todo__item.todo{
+    position: relative;
+    width: 200px;
+    background-color: #1a1a1a;
+    list-style: none;
+    height: 120px;
+}
+.todo__item--title{
+    position: absolute;
+    top:0;
+    left: 40%;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+
+}
+.todo__item--delete{
+    width: 30px;
+    color: white;
+    background-color: rgb(173, 43, 43);
+    border: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    display: block; 
+}
+
+.todo__item--delete.hidden{
+display: none;
+}
+.todo__item--done{
+    width: 30px;
+    color: white;
+    background-color: rgb(21, 156, 4);
+    font-size: 20px;
+    border: none;
+    font-family: sans-serif;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+.todo__item--update{
+    width: 30px;
+    color: white;
+    background-color: rgb(73, 56, 221);
+    font-size: 20px;
+    border: none;
+    font-family: sans-serif;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+.todo__item--update.hidden{
+  display: none;
+}
+
+.todo__add--btn{
+    background-color: #1a1a1a;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border: none;
+    font-family: sans-serif;
+    font-size: 20px ;
+}
+
+.component__title{
+    text-align: center;
+    font-family: sans-serif;
+    color: #1a1a1a;
+    text-shadow: 0  1px 2px black;
+}
+
+.add__task--btn{
+    position: absolute;
+    top: 400px;
+    left: 600px;
+    border: none;
+    background-color: #1a1a1a;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+}
+.add__task--input{
+    position: absolute;
+    top: 300px;
+    left: 500px;
+    color: #1a1a1a;
+    font-family: sans-serif;
+    font-size: 20px;
+    width: 400px;
+    height: 50px;
+}
